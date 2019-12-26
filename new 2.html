@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<BODY>
+
+<script>
+var x=6;
+var y=6;
+console.log(x+y);
+console.log(typeof(x));
+
+ 
+  function fc()
+  {
+	var n=[1,2,3,4,5];
+    var sum=0;
+    for(i=0; i <n.length; i++)
+	  {
+		  sum = sum + n[i];
+	  }
+	  console.log(sum);
+	  }
+	 
+	  function fc2()
+	  {
+	  var x=document.getElementById("sd1").value;
+	  var y=document.getElementById("sd2").value;
+	  document.getElementById("s").innerHTML=parseInt(x)+parseInt(y);
+	  }
+
+
+
+
+	  function fc3()
+	  {
+	  var a=document.getElementById("sd3").value;
+	  var b=document.getElementById("sd4").value;
+	  document.getElementById("s1").value=a+b;
+	  }
+	 
+
+
+
+	 function fc4()
+	  {
+	 document.getElementById("pic").src="D:\PROJECT\IMAGE\ROSE.jpg";
+	 }
+	 
+	 
+	 function fc5()
+	 {
+	 var userinput=document.getElementById("sd3").value;
+	 var namepattern= "^[A-Za-z]+$";
+	 if (!userinput.match(namepattern))
+	 
+	 document.getElementById("errorname").innerHTML="name should be alphabets"
+	 
+	 else
+	  document.getElementById("errorname").innerHTML="";
+	  }
+	  
+	  
+	  
+	  function fc6()
+	  {
+	var r=document.getElementByName("gender");
+	 var count=0;
+	 for(var i=0;i<r.length;i++)
+	 {
+	   if(r[i].checked)
+	   count++;
+	  }
+	  if(count==0)
+	  {
+       document.getElementById("gencheck").innerHTML="select an option";
+	   return false;
+	   }
+	   else
+	   {
+	   
+	  document.getElementById("sub").innerHTML="submitted successfully";
+	  return true;
+	  }
+	  }
+</script>
+<form onsubmit="return fc6()">
+
+<input type="text" id="sd1"><br><br>
+<input type="text" id="sd2"><br><br>
+<span id ="s"></span>
+<input type="button" onclick="fc2()">
+
+<input type="text"  id="sd3" oninput="fc5()" >first
+<span id="errorname"></span><br>
+  <input type="text"  id="sd4" >last name<br>
+   <span ><input type="text" id="s1" >fullname</span><br><br>
+   <input type="button" onclick="fc3()">
+
+<img id="pic" src="D:\PROJECT\IMAGE\OIP.jpg" onclick="fc4()" ><br>
+
+
+<input type="radio" name="gender" value="male">male
+<input type="radio" name="gender" value="female">female
+<span id="gencheck"></span>
+<input type="submit" value="submit" >
+<span id="sub"></span>
+
+
+<select name="qualificationdropdown" >
+    <option value="nil" selected> </option>
+   <option value="computerscience">b.sc cs</option>
+   <option value="maths">b.sc maths</option>
+   <option value="information technology">b.sc it</option>
+</select>
+</form>
+</body>
+</html>
