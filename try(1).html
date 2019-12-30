@@ -1,0 +1,178 @@
+<html>
+<head>
+
+ <title>Three DIVs</title>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style type="text/css">
+.header{
+	padding:20px 0;
+	background:#b0e0e6;
+        border:1px dotted #0f0;
+	}
+	.left
+	 {  padding:40px;
+	 background:#eef;
+	 border:1px dotted #0f0;
+ 	}
+	 .down
+ 	{ 
+	 padding:40px;
+	  color:"red";
+	 border:1px dotted #f00;
+ 	}
+	 .right
+ 	{ 
+	 padding:40px; 
+	 background:#efe; 
+	 border:1px dotted #00f;
+ 	}
+	li{
+	margin-top: 15;
+	}
+
+	.alignment{
+		text-align: center;
+	}
+	input{
+	text-align: center;
+	border-style: hidden;
+	}
+	
+	button{
+	border-radius: 50%;
+	background-color: #22f;
+	color: #fff;
+	}
+</style>
+<script src="try2.js">
+</script>
+
+</head>
+<body>
+<form onsubmit="return validate()">
+<div class="row" >
+	<div class="col-xs-12 header">
+		<h1><center>Hotel Mayura</center></h1>
+	</div>
+</div>
+<div class="row" >
+	<div class="col-xs-12"><center><h2>Menu</h2></center></div>
+</div>
+<hr>
+<div class="row" >
+	<div class="col-xs-4 ">
+		<center><h3>Starters</h3></center>
+	</div>
+	<div class="col-xs-4 ">
+		<center><h3>Quantity</h3></center>
+	</div>
+	<div class="col-xs-4">
+		<center><h3>Price</h3></center>
+	</div>
+	
+</div>
+<hr>
+
+<div class="row alignment" >
+	<div class="col-xs-4 "> 
+			     Spring Roll
+				
+	</div>
+	<div class="col-xs-4 "><input type=text name="spring_roll" id="spring_roll"value=0 class="cmn"/>
+	</div>
+	<div class="col-xs-4 ">120
+	</div>
+</div><br><br>
+
+
+<div class="row alignment" >
+	<div class="col-xs-4 "> Veg Manchurian
+				
+	</div>
+	<div class="col-xs-4"><input type=text name="veg_manchurian" id="veg_manchurian" value=0 class="cmn"/>
+	</div>
+	<div class="col-xs-4">100
+	</div>
+</div><br><br>
+
+
+<div class="row alignment" >
+	<div class="col-xs-4">Paneer Roll
+	</div>
+	<div class="col-xs-4"><input type=text name="paneer_roll" id="paneer_roll" value=0 class="cmn" />
+	</div>
+	<div class="col-xs-4">100
+	</div>
+</div><br><br>
+
+
+<div class="row alignment" >
+	<div class="col-xs-4">Veg Chopsey
+	</div>
+	<div class="col-xs-4"><input type=text name="veg_chopsey" id="veg_chopsey" value=0 class="cmn" />
+	</div>
+	<div class="col-xs-4">100
+	</div>
+</div><br><br>
+
+
+<div class="row alignment" >
+	<div class="col-xs-4"> Gobi Masala
+	</div>
+	<div class="col-xs-4"><input type=text name="gobi_masala" id="gobi_masala" value=0 class="cmn"/>
+	</div>
+	<div class="col-xs-4">110
+	</div>
+</div><br><br>
+
+
+<div class="row alignment" >
+	<div class="col-xs-4"> Mushroom Masala
+	</div>
+	<div class="col-xs-4"><input type=text name="mushroom_masala" id="mushroom_masala" value=0 class="cmn"/>
+	</div>
+	<div class="col-xs-4">100
+	</div>
+</div><br><br>
+
+
+<div class="row alignment" >
+	<div class="col-xs-4">Veg Schezwan
+	</div>
+	<div class="col-xs-4"><input type=text name="veg_schezwan" id="veg_schezwan" value=0 class="cmn" />
+	</div>
+	<div class="col-xs-4">100
+	</div>
+</div><br><br>
+
+
+<div class="row alignment" >
+	<div class="col-xs-4"> Mushroom Schezwan
+	</div>
+	<div class="col-xs-4"><input type=text name="mushroom_schezwan" id="mushroom_schezwan" value=0 class="cmn" />
+	</div>
+	<div class="col-xs-4">110
+	</div>
+</div><br><br>
+
+
+<div class="row alignment" >
+	<div class="col-xs-4"> Paneer Schezwan
+	</div>
+	<div class="col-xs-4"><input type=text name="paneer_schezwan" id="paneer_schezwan" value=0  class="cmn"/>
+	</div>
+	<div class="col-xs-4">100
+	</div>
+</div><br><br>
+
+<div class="row alignment" >
+	<div class="col-xs-5"> </div>
+	<div class="col-xs-1"> <input type=submit value="Proceed" ></div>
+	<div class="col-xs-1"> <input type=reset value="Cancel" ></div>
+</div>
+
+</form>
+<br><br><br>
+</body>
+</html>
